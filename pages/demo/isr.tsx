@@ -1,7 +1,7 @@
 import { GetStaticProps } from "next";
 import { useEffect, useState } from "react";
 import { TimeOutput } from "../../components/response";
-import { fetchDatetime } from "../../services/worldtimeapi";
+import { fetchDatetime } from "../../services/datetimeapi";
 
 type PageProps = {
   serverDatetime: string;

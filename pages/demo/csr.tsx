@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { TimeOutput } from "../../components/response";
-import { fetchDatetime } from "../../services/worldtimeapi";
+import { fetchDatetime } from "../../services/datetimeapi";
 
 export default function Page() {
   const [datetime, setDatetime] = useState<string>();
