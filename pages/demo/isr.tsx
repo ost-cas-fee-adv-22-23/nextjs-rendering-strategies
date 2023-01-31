@@ -19,5 +19,6 @@ export default function Page({ serverDatetime }: PageProps) {
   return <TimeOutput datetime={datetime} serverDatetime={serverDatetime} />;
 }
 export const getStaticProps: GetStaticProps = async () => ({
-  props: { serverDatetime: await fetchDatetime(), revalidate: 10 },
+  props: { serverDatetime: await fetchDatetime() },
+  revalidate: 10,
 });
